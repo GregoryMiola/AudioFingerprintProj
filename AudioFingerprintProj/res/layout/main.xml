@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableLayout
+                android:id="@+id/capturaMusicas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dip"
+                android:stretchColumns="1" >
+
+               <LinearLayout  android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:orientation="vertical" >
+				
+					<RelativeLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="0dp"
+				        android:layout_weight="0.37" >
+
+	                    <TextView
+	                        android:id="@+id/status"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_above="@+id/recordButton"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_marginBottom="46dp"
+	                        android:paddingTop="50dp"
+	                        android:text="@string/status"
+	                        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	                    <Button
+	                        android:id="@+id/recordButton"
+	                        android:layout_width="200dp"
+	                        android:layout_height="100dp"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_marginBottom="42dp"
+	                        android:text="@string/recordButton" />
+                    </RelativeLayout>
+				</LinearLayout>
+            </TableLayout>
+            
+            <ListView
+                android:id="@+id/listaMusicas"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

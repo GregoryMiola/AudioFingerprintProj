@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Audio Fingerprint Proj</string>
+    <string name="status">Aguardando...</string>
+    <string name="recordButton">Capturar</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="albumName">Nome do Album</string>
+    <string name="idMusica">Id da Música</string>
+	<string name="artistName">Banda/Artista</string>
+	<string name="musicTitle">Título da Música</string>
+	<string name="composer">Compositor</string>
+	<string name="searchCipher">Buscar Cifra</string>
+	<string name="urlSite">http://www.cifraclub.com.br/</string>
+</resources>
